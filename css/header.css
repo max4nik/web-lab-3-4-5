@@ -1,0 +1,52 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: capitalize;
+    align-items: center;
+    font-size: larger;
+    padding: 0.4rem 0 0.5rem 1rem;
+    border-bottom: 0.1rem solid black;
+}
+header h1{
+    padding-left: 3%;
+}
+nav{
+    padding-right: 17%;
+}
+.navigation-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navigation-list li:nth-child(2){
+    padding-left: 1rem;
+}
+
+.navigation-list a:hover{
+    text-decoration: black underline;
+}
+
+.navigation-list a:active{
+    text-decoration: black underline;
+}
+.search-gemstone{
+    display: flex;
+    flex-direction: row;
+    padding-right: 12%;
+}
+.find-gemstone{
+    width: 150%;
+}
+.clear-search-bar{
+    background-color: transparent;
+    margin-left: 10%;
+    padding: 3%;
+    border-radius: 10%;
+    border-color: grey;
+    padding: 2%;
+    width: 7rem;
+}
+.clear-search-bar:hover{
+    border-color: black;
+}
