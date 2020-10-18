@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEMSTONE CRUD</title>
+    <link rel = "icon" 
+          href = "https://images.vexels.com/media/users/3/151742/isolated/preview/72ff0fca559204b673e34cedb150e964-gemstone-diamond-flat-icon-by-vexels.png" 
+          type = "image/x-icon"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>jewelry</h1>
+        <nav>
+            <ul class="navigation-list">
+                <li><a href="">gemstones</a></li>
+                <li><a href="create.html">create gemstone</a></li>
+            </ul>
+        </nav>
+
+        <div class= "search-gemstone">
+            <input 
+                type="text" 
+                id="find-gemstone" 
+                name="find-gemstone" 
+                class="find-gemstone"
+                placeholder="Enter gemstone name. . ."
+            >
+            <button class="clear-search-bar" id ="clear-search-bar">Clear</button>
+        </div>
+    </header>
+
+    <section class="gemstones-section">
+        
+        <div class="gemstones-manager">
+            <div class="sort-manager">
+                <label for="sort-select">Sort By</label>
+                <select name="sort-select" id="sort-select" onchange="visualiseSortedGemstones()">
+                    <option value="none">dont sort</option>
+                    <option value="name">name</option>
+                    <option value="weight">weight</option>
+                    <option value="price">price</option>
+                </select>
+            </div>
+            <div class="calculate-price">
+                <button id="calculate-price__button" onclick="calculatePrice()">Calculate</button>
+                <label id="total-price">Total price: </label>
+            </div>
+
+        </div>
+        <ul id="gemstones-list" class="gemstones-list"></ul>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
