@@ -16,8 +16,7 @@
         <h1>jewelry</h1>
         <nav>
             <ul class="navigation-list">
-                <li><a href="">gemstones</a></li>
-                <li><a href="create.html">create gemstone</a></li>
+                <li><a id="create_gemstone_open_button" class="create_gemstone_open_button">create gemstone</a></li>
             </ul>
         </nav>
 
@@ -53,7 +52,31 @@
         </div>
         <ul id="gemstones-list" class="gemstones-list"></ul>
     </section>
-
+    <section class="create_gemstone" id="create_gemstone">
+        <div id="cross" class="cross">❌</div>
+        <form class="form__create_gemstone", id="form__create_gemstone">
+            <h1>Create gemstone</h1>
+            <div>
+                <label for="name"id>ID</label>
+                <input id="create_id" name="id" type="number" required>
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input id="create_name" name="name" type="text" required>
+            </div>
+            <div>
+                <label for="weightInCarats">Weight in carats</label>
+                <input id="create_weightInCarats" name="weightInCarats" type="number" step=0.1 required>
+            </div>
+            <div>
+                <label for="priceInUSD">Price in USD</label>
+                <input id="create_priceInUSD" name="priceInUSD" type="number" required>
+            </div>
+            <button type="button" id="create_button" onclick="createGemstone()">Create</button>
+        </form>
+    </section>
     <script src="js/main.js"></script>
+    <script src="js/show_create_edit.js"></script>
+    
 </body>
 </html>

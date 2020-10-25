@@ -1,0 +1,40 @@
+
+.create_gemstone{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.form__create_gemstone{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    left: 43%;
+}
+.form__create_gemstone div{
+    display: flex;
+    flex-direction: column;
+}
+.form__create_gemstone div:not(:nth-child(1)),
+.form__create_gemstone button{ 
+    margin-top: 10%;
+}
+.cross{
+    position: absolute;
+    top: 2%;
+    left: 1.5%;
+    font-size: 250%;
+    cursor: pointer;
+}
+.create_gemstone_open_button{
+    cursor: pointer;
+}
+
+.show{
+    display: inline;
+}
