@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GEMSTONE CRUD</title>
-    <link rel = "icon" 
-          href = "https://images.vexels.com/media/users/3/151742/isolated/preview/72ff0fca559204b673e34cedb150e964-gemstone-diamond-flat-icon-by-vexels.png" 
-          type = "image/x-icon"> 
+    <link rel="icon"
+        href="https://images.vexels.com/media/users/3/151742/isolated/preview/72ff0fca559204b673e34cedb150e964-gemstone-diamond-flat-icon-by-vexels.png"
+        type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header>
@@ -20,20 +22,15 @@
             </ul>
         </nav>
 
-        <div class= "search-gemstone">
-            <input 
-                type="text" 
-                id="find-gemstone" 
-                name="find-gemstone" 
-                class="find-gemstone"
-                placeholder="Enter gemstone name. . ."
-            >
-            <button class="clear-search-bar" id ="clear-search-bar">Clear</button>
+        <div class="search-gemstone">
+            <input type="text" id="find-gemstone" name="find-gemstone" class="find-gemstone"
+                placeholder="Enter gemstone name. . .">
+            <button class="clear-search-bar" id="clear-search-bar">Clear</button>
         </div>
     </header>
 
     <section class="gemstones-section">
-        
+
         <div class="gemstones-manager">
             <div class="sort-manager">
                 <label for="sort-select">Sort By</label>
@@ -54,12 +51,8 @@
     </section>
     <section class="create_gemstone" id="create_gemstone">
         <div id="cross" class="cross">❌</div>
-        <form class="form__create_gemstone", id="form__create_gemstone">
+        <form class="form__create_gemstone" , id="form__create_gemstone">
             <h1>Create gemstone</h1>
-            <div>
-                <label for="name"id>ID</label>
-                <input id="create_id" name="id" type="number" required>
-            </div>
             <div>
                 <label for="name">Name</label>
                 <input id="create_name" name="name" type="text" required>
@@ -70,13 +63,14 @@
             </div>
             <div>
                 <label for="priceInUSD">Price in USD</label>
-                <input id="create_priceInUSD" name="priceInUSD" type="number" required>
+                <input id="create_priceInUSD" name="priceInUSD" type="number" step=100 required>
             </div>
             <button type="button" id="create_button" onclick="createGemstone()">Create</button>
         </form>
     </section>
     <script src="js/main.js"></script>
     <script src="js/show_create_edit.js"></script>
-    
+
 </body>
+
 </html>
